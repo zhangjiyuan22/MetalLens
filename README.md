@@ -9,6 +9,7 @@ Mock-recovery experiments with our new forward-modeling code, \textsc{MetalLens}
 High-resolution imaging campaigns with Roman, CSST, and other facilities can therefore assemble a large sample of microlensing cold-planet systems with well-measured host-star metallicities, enabling the first robust tests of how the occurrence of cold planets across a wide range of masses around low-mass stars depends on host metallicity, and providing a new probe of planet-formation theories such as core accretion. 
 
 ## how to run a mock-recovery experiment?
+0. git clone https://github.com/zhangjiyuan22/MetalLens.git
 1. run mock_an_event.py to derive the observables for a mock event (change mock event's physical parameters around line 40 to 60)
 2. copy the derived observables and their uncertainties into config/mock1.cfg (line 93 for tE, line 122-124 for murel_hel, line 136 for Color_F062_F087_lens_value, line 141 for Color_F087_F213_lens_value, line 146 for F213_lens_value)
 3. change n_process in config/mock1.cfg to the number of cores on your device (line 41)
