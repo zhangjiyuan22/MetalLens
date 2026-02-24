@@ -41,14 +41,11 @@ from cal_weights import *
 ############################################################
 ############### only need to change below ##################
 ############################################################
-# Ml = np.array([0.5]) # solar mass
-Ml = np.array([1.0]) # solar mass
+Ml = np.array([0.5]) # solar mass
 Dl = np.array([7.5]) # kpc
 Ds = np.array([9])   # kpc
-# MH_lens = np.array([0.2]) # dex
-# Age_lens = np.array([6]) # Gyr
-MH_lens = np.array([0.0]) # dex
-Age_lens = np.array([10]) # Gyr
+MH_lens = np.array([0.2]) # dex
+Age_lens = np.array([6]) # Gyr
 
 AV_lens = np.array([4]) # mag
 RV_lens = np.array([2.5]) 
