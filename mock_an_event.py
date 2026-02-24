@@ -88,9 +88,26 @@ FIELDS = [
 # F062, F087, F213
 fields = (FIELDS[11], FIELDS[12], FIELDS[18])
     
-    
-    
-out, meta = interpolate_from_triplets(NPZ_PATH, MH_lens, Age_lens, Ml, fields=fields)
+
+z = np.load(NPZ_PATH, allow_pickle=False)
+
+db = {}
+# scalars / axes / packing
+for k in ["mh_min", "dmh", "n_mh", "age_min", "dage", "n_age", "MH_axis", "Age_axis",
+            "offset", "length", "Mass", "mass_min", "mass_max"]:
+    db[k] = z[k]
+
+# requested photometric fields
+for f in fields:
+    db[f] = z[f]
+
+z.close()
+
+PARSEC_DB = db
+
+print(PARSEC_DB)
+
+out, meta = interpolate_from_triplets(PARSEC_DB, MH_lens, Age_lens, Ml, fields=fields)
 
 
 ### absolute magnitude and intrinsic color
