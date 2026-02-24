@@ -105,7 +105,7 @@ z.close()
 
 PARSEC_DB = db
 
-print(PARSEC_DB)
+# print(PARSEC_DB)
 
 out, meta = interpolate_from_triplets(PARSEC_DB, MH_lens, Age_lens, Ml, fields=fields)
 
