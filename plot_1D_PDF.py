@@ -242,7 +242,7 @@ def plot_from_combined_h5(
     fig = plt.figure(figsize=figsize, dpi=dpi)
     gs = gridspec.GridSpec(nrows_total, ncols)
     axs = [plt.subplot(gs[i]) for i in range(nrows_total * ncols)]
-    plt.subplots_adjust(wspace=0.2, hspace=0.5)
+    plt.subplots_adjust(wspace=0.2, hspace=1)
 
     # quantiles (68.27% equal-tail)
     qlo, qmed, qhi = (0.5 - 0.6827 / 2), 0.5, (0.5 + 0.6827 / 2)
@@ -345,7 +345,7 @@ def plot_from_combined_h5(
             good = np.isfinite(arr) & (arr > 0)
             xw = np.log10(arr[good])
 
-            title = f"log10({wname}) (UNWEIGHTED)"
+            title = f"log10({wname})"# (UNWEIGHTED)"
             ax.set_title(title, fontsize=9)
 
             if xw.size == 0:
@@ -395,7 +395,7 @@ def plot_from_combined_h5(
 # =========================
 DIR = "."
 
-eventname = "mock1"  # change here
+eventname = "mock1" # change here
 modelname = "single_lens"
 
 savepath = "output/%s/%s/1D_PDF.pdf"%(eventname, modelname)
@@ -407,7 +407,7 @@ plot_from_combined_h5(
     bins_main=90,
     bins_w=120,
     ncols=5,
-    figsize=(16, 12),
+    figsize=(16, 16),
     dpi=300,
     color_fill="dodgerblue",
     alpha_fill=0.5,
