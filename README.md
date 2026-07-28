@@ -6,21 +6,21 @@
 
 We present a method that can, for the first time, routinely constrain the metallicities of the dominant population of microlensing lenses: low-mass stars in the Galactic bulge and inner disk. Gravitational microlensing is uniquely sensitive to cold planets beyond the snow line around these hosts, but the metallicities of such distant, low-mass lenses have so far remained essentially unconstrained.
 
-The method exploits the fact that the angular Einstein radius, \(\theta_{\rm E}\), plays a role analogous to parallax in classical stellar characterization. When combined with multiband lens photometry, (\theta_{\rm E}) helps break the degeneracies among stellar mass, distance, metallicity, and extinction, allowing these quantities to be constrained jointly.
+The method exploits the fact that the angular Einstein radius, $\theta_{\rm E}$, plays a role analogous to parallax in classical stellar characterization. When combined with multiband lens photometry, $\theta_{\rm E}$ helps break the degeneracies among stellar mass, distance, metallicity, and extinction, allowing these quantities to be constrained jointly.
 
 The method requires lens-flux measurements in three bands from high-resolution imaging:
 
-* a (V/R)-like band;
-* an (I/z)-like band; and
-* a (K_{\rm s})-like band.
+* a $V/R$-like band;
+* an $I/z$-like band; 
+* a $K_{\rm s}$-like band.
 
 One suitable combination is Roman F062 + F087 + F213. The F062 measurement may also be replaced by CSST r.
 
-Mock-recovery experiments performed with **MetalLens** show that, for a (0.5,M_\odot) bulge lens, the metallicity can be recovered with a precision of approximately 0.25 dex when:
+Mock-recovery experiments performed with **MetalLens** show that, for a $0.5,M_\odot$ bulge lens, the metallicity can be recovered with a 1 sigma precision of approximately 0.25 dex when:
 
-* (\theta_{\rm E}) is measured to approximately (10%);
-* (\sigma_{F062-F087} \simeq 0.05) mag; and
-* (\sigma_{F087-F213} \simeq 0.04) mag.
+* $\theta_{\rm E}$ is measured to approximately (10%);
+* $\sigma_{F062-F087} \simeq 0.05$ mag; and
+* $\sigma_{F087-F213} \simeq 0.04$ mag.
 
 High-resolution imaging campaigns with Roman, CSST, and other facilities could therefore assemble a large sample of microlensing cold-planet systems with well-constrained host-star metallicities. Such a sample would enable the first robust tests of how the occurrence of cold planets over a wide range of masses depends on host metallicity around low-mass stars, providing a new observational test of planet-formation theories such as core accretion.
 
