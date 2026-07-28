@@ -211,7 +211,6 @@ def _make_ranges_and_quantiles(Ml, Dl, MH, AV, w,
 # Corner plot driver
 # =========================
 def make_corner_plot(
-    DIR,
     eventname,
     modelname, 
     mass_kind="primary",         # binary lens only: primary|secondary|total
@@ -234,12 +233,12 @@ def make_corner_plot(
     show_points=False,            # keep clean
     savepath=None,
 ):
-    cfgfile = os.path.join(DIR, "config", f"{eventname.lower()}.cfg")
+    cfgfile = os.path.join("config", f"{eventname.lower()}.cfg")
     config = getEventInfo(eventname, cfgfile=cfgfile)
 #     modelname = config.model
 
     resultfile = os.path.join(
-        DIR, "output", eventname, modelname,
+        "output", eventname, modelname,
         f"combine_weight_{eventname}_{modelname}.h5"
     )
     if not os.path.exists(resultfile):
@@ -421,7 +420,7 @@ if __name__ == "__main__":
     }                    # CHANGE
 
     fig = make_corner_plot(
-        DIR=DIR,
+        # DIR=DIR,
         eventname=eventname,
         modelname = modelname,
         mass_kind="primary",
