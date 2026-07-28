@@ -1,38 +1,47 @@
 from cal_weights import *
 
 ### mock event information ###
-# single lens, M=0.5 solar mass, Ds=9kpc(Roman field mean), Dl=7.5kpc(Roman field mean, see Roman Paper 4)
-# [M/H] = 0.2 , Age = 6 Gyr
+# single lens, M=0.5 solar mass, Ds=9kpc, Dl=7.5kpc(Roman field mean, see Roman Paper 4), 
+# [M/H] = 0.1 , Age = 8 Gyr, 
+# AV = 4 mag (Roman field average), RV=2.5
 # 
-# from PARSEC, using actual mass grid = 0.501 solar mass, 
-# M_F062 = 9.529 mag, M_F087 = 7.700 mag, M_F213 = 5.845 mag
+# from PARSEC,  
+# M_F062 = 9.354 mag, M_F087 = 7.613 mag, M_F213 = 5.799 mag
 # 
-# mulens = 5 * (np.log10(7.5) + 2) = 14.3753 mag,
-# thus F062 = 23.9043 mag, F087 = 22.0753 mag, F213 = 20.2203 mag
+# mu(DL) = 5 * (np.log10(7.5) + 2) = 14.375 mag,
+# thus intrinsic F062 = 23.729 mag, F087 = 21.988 mag, F213 = 20.174 mag
 # 
-# thus pirel = 0.022222 mas, thetaE = 0.3008 mas
+# AV = 4 mag, RV=2.5, 
+# resulting Alambda/AV = [0.8082, 0.4676, 0.1084], 
+# thus A_F062 = 3.2328 mag, A_F087 = 1.8704 mag, A_F213 = 0.4336 mag
+#
+# thus reddened F062 = 26.96 mag, F087 = 23.86 mag, F213 = 20.61 mag
+# thus (F062-F087) = 3.10 mag, (F087-F213) = 3.25 mag
 # 
-### change later
-# murel_hel_E = -1.8 0.18, following OB110950, and 10% uncertainty
-# murel_hel_N =  3.8 0.38
+# give sigma(F062-F087,obs)=0.05 mag, sigma(F062-F087,int)=0.05 mag
+#      sigma(F087-F213,obs)=0.04 mag, sigma(F087-F213,int)=0.03 mag
+#      sigma(F213)=0.03 mag
+#
+#
+# Given ML,Dl,Ds
+# pirel = 0.022222 mas, thetaE = 0.3008 mas
+# 
+# adopt
+# murel_hel_E =  3.0 0.3, # (10% uncertainty)
+# murel_hel_N =  4.0 0.4
 # 
 # t0_for_velocity = 12745.5 (2030.09.01), toward this ra dec, 
 # ve=  2.052 AU/yr
 # vn= -0.618 AU/yr
 #
-# thus murel_geo_E = -1.8 -   2.052  * 0.022222 = -1.8456 mas/yr
-#      murel_geo_N =  3.8 - (-0.618) * 0.022222 =  3.8137 mas/yr
-#      murel_geo = 4.2368 mas/yr
+# thus murel_geo_E =  3.0 -   2.052  * 0.022222 =  2.9544 mas/yr
+#      murel_geo_N =  4.0 - (-0.618) * 0.022222 =  4.0137 mas/yr
+#      murel_geo = 4.9838 mas/yr
 #
 # give a 5% uncertainty to tE
-# tE = 25.9316 +- 1.2966 day
+# tE = 22.0 +- 1.1 day
 #
-# AV = 4 mag (Roman field average), RV=2.5, 
-# resulting Alambda/AV = [0.8082, 0.4676, 0.1084], 
-# thus A_F062 = 3.2328 mag, A_F087 = 1.8704 mag, A_F213 = 0.4336 mag
-#
-# thus reddened F062 = 27.1371 mag, F087 = 23.9457 mag, F213 = 20.6539 mag
-# thus (F062-F087) = 3.1914 mag, (F087-F213) = 3.2918 mag
+
 # 
 ### mock event information end ###
 
