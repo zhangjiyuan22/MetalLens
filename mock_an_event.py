@@ -53,17 +53,17 @@ from cal_weights import *
 Ml = np.array([0.5]) # solar mass
 Dl = np.array([7.5]) # kpc
 Ds = np.array([9])   # kpc
-MH_lens = np.array([0.2]) # dex
-Age_lens = np.array([6]) # Gyr
+MH_lens = np.array([0.1]) # dex
+Age_lens = np.array([8]) # Gyr
 
 AV_lens = np.array([4]) # mag
 RV_lens = np.array([2.5]) 
-murel_hel_E = np.array([-1.8]) # mas/yr
-murel_hel_N = np.array([3.8]) # mas/yr
+murel_hel_E = np.array([3.0]) # mas/yr
+murel_hel_N = np.array([4.0]) # mas/yr
 
-Color_F062_F087_lens_uncertainty = np.array([0.1]) # mag
-Color_F087_F213_lens_uncertainty = np.array([0.05]) # mag
-F213_lens_uncertainty = np.array([0.05]) # mag
+Color_F062_F087_lens_uncertainty = np.array([0.05]) # mag
+Color_F087_F213_lens_uncertainty = np.array([0.04]) # mag
+F213_lens_uncertainty = np.array([0.03]) # mag
 
 tE_fractional_uncertainty = np.array([0.05])
 murel_hel_fractional_uncertainty = np.array([0.10])
