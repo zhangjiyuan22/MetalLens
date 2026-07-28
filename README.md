@@ -91,19 +91,19 @@ Run:
 python simulate_events.py
 ```
 
-With the default configuration, this step generates (5\times10^9) simulated microlensing events.
+With the default configuration, this step generates $5\times10^9$ simulated microlensing events.
 
 On a 96-core computing node, the calculation typically takes approximately two minutes.
 
 The current implementation adopts flat priors on:
 
-* lens mass, (M_{\rm L});
-* lens distance, (D_{\rm L});
-* metallicity, ([{\rm M/H}]);
-* extinction, (A_V); and
+* lens mass, $M_{\rm L}$;
+* lens distance, $D_{\rm L}$;
+* metallicity, $[{\rm M/H}]$;
+* extinction, $A_V$; and
 * stellar age.
 
-Informative priors are adopted for the source distance, (D_{\rm S}), and the extinction-law parameter, (R_V).
+Informative priors are adopted for the source distance, $D_{\rm S}$, and the extinction-law parameter, $R_V$.
 
 ### 6. Calculate the event weights
 
@@ -153,7 +153,7 @@ output/mock1/single_lens/corner_plot.pdf
 
 ## Memory Requirements
 
-The current implementation requires more than approximately (0.4) GB of RAM per CPU core.
+The current implementation requires more than approximately 0.4 GB of RAM per CPU core.
 
 On systems with limited memory, reduce `n_dot` and increase `n_run` in:
 
