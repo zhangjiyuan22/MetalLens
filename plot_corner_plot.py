@@ -457,7 +457,7 @@ if __name__ == "__main__":
         ax.tick_params(zorder=1000)
     
     plt.savefig(
-    'output/corner_plot.pdf',
+    "output/%s/%s/corner_plot.pdf"%(eventname, modelname),
     dpi=300, bbox_inches='tight'
     )
 
