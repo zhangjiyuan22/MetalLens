@@ -18,7 +18,7 @@ One suitable combination is Roman F062 + F087 + F213. The F062 measurement may a
 
 Mock-recovery experiments performed with **MetalLens** show that, for a $0.5M_\odot$ bulge lens, the metallicity can be recovered with a 1 sigma precision of approximately 0.25 dex when:
 
-* $\theta_{\rm E}$ is measured to approximately (10%);
+* $\theta_{\rm E}$ is measured to approximately 10%;
 * $\sigma_{F062-F087} \simeq 0.05$ mag; and
 * $\sigma_{F087-F213} \simeq 0.04$ mag.
 
