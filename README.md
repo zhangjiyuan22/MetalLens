@@ -14,7 +14,7 @@ The method requires lens-flux measurements in three bands from high-resolution i
 * an (I/z)-like band; and
 * a (K_{\rm s})-like band.
 
-One suitable combination is Roman F062 + F087 + F213. The F062 measurement may also be replaced by CSST (r), Euclid VIS, or suitable HST (V/R)-like imaging.
+One suitable combination is Roman F062 + F087 + F213. The F062 measurement may also be replaced by CSST r.
 
 Mock-recovery experiments performed with **MetalLens** show that, for a (0.5,M_\odot) bulge lens, the metallicity can be recovered with a precision of approximately (0.3) dex when:
 
