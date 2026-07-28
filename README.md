@@ -6,7 +6,7 @@
 
 We present a method that can, for the first time, routinely constrain the metallicities of the dominant population of microlensing lenses: low-mass stars in the Galactic bulge and inner disk. Gravitational microlensing is uniquely sensitive to cold planets beyond the snow line around these hosts, but the metallicities of such distant, low-mass lenses have so far remained essentially unconstrained.
 
-The method exploits the fact that the angular Einstein radius, (\theta_{\rm E}), plays a role analogous to parallax in classical stellar characterization. When combined with multiband lens photometry, (\theta_{\rm E}) helps break the degeneracies among stellar mass, distance, metallicity, and extinction, allowing these quantities to be constrained jointly.
+The method exploits the fact that the angular Einstein radius, \(\theta_{\rm E}\), plays a role analogous to parallax in classical stellar characterization. When combined with multiband lens photometry, (\theta_{\rm E}) helps break the degeneracies among stellar mass, distance, metallicity, and extinction, allowing these quantities to be constrained jointly.
 
 The method requires lens-flux measurements in three bands from high-resolution imaging:
 
