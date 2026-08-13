@@ -1,28 +1,15 @@
 # MetalLens
 
-## Enabling Metallicity Constraints on Microlensing Lenses from Multiband Lens-Flux Measurements
+## Enabling Metallicity Measurements of Microlensing Lenses through Multiband Lens Photometry
 
-**MetalLens** is a forward-modeling framework for constraining the metallicities and other physical properties of microlensing lenses from microlensing observables and multiband lens-flux measurements.
+**MetalLens** is a framework for constraining the metallicities and other physical properties of microlensing lenses from microlensing observables and multiband lens photometry.
 
-We present a method that can, for the first time, routinely constrain the metallicities of the dominant population of microlensing lenses: low-mass stars in the Galactic bulge and inner disk. Gravitational microlensing is uniquely sensitive to cold planets beyond the snow line around these hosts, but the metallicities of such distant, low-mass lenses have so far remained essentially unconstrained.
-
-The method exploits the fact that the angular Einstein radius, $\theta_{\rm E}$, plays a role analogous to parallax in classical stellar characterization. When combined with multiband lens photometry, $\theta_{\rm E}$ helps break the degeneracies among stellar mass, distance, metallicity, and extinction, allowing these quantities to be constrained jointly.
-
-The method requires lens-flux measurements in three bands from high-resolution imaging:
-
-* a $V/R$-like band;
-* an $I/z$-like band; 
-* a $K_{\rm s}$-like band.
-
-One suitable combination is Roman F062 + F087 + F213. The F062 measurement may also be replaced by CSST r.
-
-Mock-recovery experiments performed with **MetalLens** show that, for a $0.5M_\odot$ bulge lens, the metallicity can be recovered with a 1 sigma precision of approximately 0.25 dex when:
-
-* $\theta_{\rm E}$ is measured to approximately 10%;
-* $\sigma_{F062-F087} \simeq 0.05$ mag; and
-* $\sigma_{F087-F213} \simeq 0.04$ mag.
-
-High-resolution imaging campaigns with Roman, CSST, and other facilities could therefore assemble a large sample of microlensing cold-planet systems with well-constrained host-star metallicities. Such a sample would enable the first robust tests of how the occurrence of cold planets over a wide range of masses depends on host metallicity around low-mass stars, providing a new observational test of planet-formation theories such as core accretion.
+We present the photometric--microlensing metallicity method, which enables metallicity measurements of M-dwarf lenses out to bulge distances by combining their multi-band photometry with the angular Einstein radius. 
+The cool atmospheres of M dwarfs contain abundant molecules, whose broad absorption bands make their positions in an optical--NIR color--absolute magnitude diagram sensitive to metallicity. 
+The angular Einstein radius provides the mass--distance constraint needed to infer the lens absolute magnitude, while the intrinsic M-dwarf locus and reddening vector are non-parallel in color--color space, allowing the lens extinction and intrinsic color to be inferred simultaneously from its multi-band photometry, thereby recovering the lens intrinsic position in the metallicity-sensitive color--absolute magnitude diagram. 
+The method requires three-band lens photometry spanning roughly the \(R\), \(Z\), and \(K\) bands, making it particularly well suited to Roman through its high-resolution $F062$, $F087$, and $F213$ imaging. 
+With the planned Roman Galactic Bulge Time-Domain Survey (GBTDS) observations plus an additional \(\sim8~\mathrm{hr}\) of \(F062\) imaging per field roughly a decade after Roman launch, corresponding to a total of \(\sim40~\mathrm{hr}\) across the five contiguous GBTDS fields, we estimate that host metallicities could be measured for \(\sim150\) planetary systems under the GBTDS yield forecast, with a typical \(1\sigma\) precision of \(\sim0.25\) dex from our mock-recovery analysis. 
+Applied homogeneously to GBTDS events with and without detected planets, the method would enable the first measurement of the occurrence--metallicity relation for cold low-mass planets beyond the snow line, constrain the low-metallicity cutoff for their formation, and extend occurrence--metallicity studies into the inner Galaxy. 
 
 ---
 
