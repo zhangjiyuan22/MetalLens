@@ -158,6 +158,7 @@ Age_lens_snapped = meta["Age_grid"]
 #     [6.0, 0.8691, 0.6059, 0.1451]
 # ])
 
+# a lambda factor is omitted in the above old version, below is the correct version
 LOOKUP_CCM89_MDWARF_F062_F087_F213 = np.array([
     [2.0, 0.7641, 0.4034, 0.0924],
     [2.1, 0.7709, 0.4176, 0.0961],
